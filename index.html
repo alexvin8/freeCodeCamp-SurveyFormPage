@@ -1,0 +1,65 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<!-- 
+-->
+<div class="container">
+    <header class="header">
+        <h1 id="title">someService Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve our platform</p>
+    </header>
+    <form id="survey-form">
+        <div>
+            <label id="name-label" for name="name">Name:</label>
+            <input type="text" name="name" id="name" class="form-control" placeholder="your name.." required />
+        </div>
+        <div>
+            <label id="email-label" for name="email">Email:</label>
+            <input type="email" name="email" id="email" class="form-control" placeholder="your email.." required />
+        </div>
+        <div>
+            <label id="number-label" for name="number">Enter your age (optional)</label>
+            <input type="number" name="number" id="number" class="form-control" min="0" ; max="100" ;
+                placeholder="your age..">
+        </div>
+        <div>
+            <label class="form-group">Describe your programming experience</label>
+            <select id="dropdown">
+                <option disabled selected value>--Please choose an option--</option>
+                <option value="theBest">I am the BEST!!!</option>
+                <option value="veryGood">Very good</option>
+                <option value="okay">okay</option>
+                <option value="bad">bad</option>
+                <option value="what??">what??</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <p>Were out tutorials helpful for you?</p>
+            <label>
+                <input name="user-helpful" value="yes" type="radio" class="input-radio" checked>YES!
+            </label>
+            <label>
+                <input name="user-helpful" value="no" type="radio" class="input-radio">no...
+            </label>
+            <div class="form-group">
+                <p>What would you like to see improved? (Check all that apply)</p>
+                <label>
+                    <input name="prefer" value="projects" type="checkbox" class="input-checkbox" />Projects
+                </label>
+                <label>
+                    <input name="prefer" value="explanations" type="checkbox" class="input-checkbox" />Explanations
+                </label>
+                <label>
+                    <input name="prefer" value="Examples" type="checkbox" class="input-checkbox" />Examples
+                </label>
+            </div>
+            <div class="form-group">
+                <p>Do you have any comments?<p>
+                        <textarea rows="4" cols="50" placeholder="Enter you comment.."></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">
+                    Submit
+                </button>
+            </div>
+    </form>
+</div>
